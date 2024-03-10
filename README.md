@@ -250,7 +250,7 @@ and explore its integration into clinical practice.
 
 ## Certificate Best Paper Award for this Project and paper publication.
 
-### Paper Approval Certificate:
+### Paper Presentation and Approval Certificate:
 
 
 ![Alt text](Important_images/Acceptance_Certificate.jpg)
