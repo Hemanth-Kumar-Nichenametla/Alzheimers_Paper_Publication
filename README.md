@@ -247,3 +247,15 @@ highest accuracy of 85.3%, validation accuracy of 87.3%, and AUC of 86%. The
 ensemble model offers a promising technique for reliable and accurate AD prediction.
 Further research and validation studies are encouraged to validate its effectiveness
 and explore its integration into clinical practice.
+
+## Certificate Best Paper Award for this Project and paper publication.
+
+### Paper Approval Certificate:
+
+
+![Alt text](Important_images/Acceptance_Certificate.jpg)
+
+### Best Paper Award Cerificate:
+
+![Alt text](Important_images/Best_Paper_Award_Certificate.jpg)
+
