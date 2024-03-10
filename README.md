@@ -1,8 +1,69 @@
-# Alzheimers_Paper_Publication
+# Predictive Analytics for Diagnosing Alzheimer's Disease using Artificial Intelligence and Machine Learning Algorithms.
 
 ## Project Abstract:
 
 Predictive analytics plays a vital role in the healthcare industry in providing timely insights and decisions to all the stakeholders of the healthcare industry. Machine Learning has become predominant in the healthcare industry for predicting various diseases that cause severe health issues in humans. One such disease is Alzheimer’s, a common neurological condition that affects a sizable number of the elderly population. Although the symptoms of this disease are very minimal in the beginning, they become critical over time and can lead to dementia. Early prediction of this disease can improve a patient’s health status and facilitate the improvement of targeted interventions. This study uses various machine learning algorithms such as Logistic Regression, KNN, Decision Tree, SVC, Random Forest, Hard Voting Classifier, Soft Voting Classifier, Gradient Boosting Classifier, Extreme Gradient Boosting Classifier, and Ensemble Learning Model to predict Alzheimer’s disease. This research uses the Open Access Series of Imaging Studies (OASIS) longitudinal dataset to build different machine learning models by using multiple machine learning algorithms to predict Alzheimer’s disease. The obtained results clearly indicate that ensemble model achieved a higher validation accuracy of 87.3% and test accuracy of 85.3%, in comparison with the other machine learning algorithms used in this work.
+
+## Dataset Preparation
+
+In this research work, we have used the Open Access Series of Imaging Studies
+(OASIS) longitudinal dataset consists of details about Alzimer’s diseased (Demented
+Group) patient and a normal patient (Non-Demented Group) feature. This data set
+comprises of approximately 15 features, comprising of both numerical and categorical
+data. The Open Access Series of Imaging Studies (OASIS) dataset, with its 150 rows
+and 15 columns, is a pivotal resource in neuroimaging and cognitive research. Its
+longitudinal design allows researchers to study changes over time in individuals,
+including those with conditions like Alzheimer's disease. Despite its smaller size, the
+dataset offers a rich set of features and clinical data, supporting the development of
+machine learning models, diagnostic tools, and novel analytical approaches for
+cognitive disorder detection and monitoring. The OASIS dataset's columns provide
+essential information about subjects, their demographics, and neuroimaging and
+cognitive assessment measures, fostering advancements in brain health and cognitive
+disorder research. A snapshot of the dataset is provided in Table 1 and a
+comprehensive description of its features is provided in the below tables.
+
+### Snapshot of the dataset
+
+![Alt text](<Important_images/Screenshot 2024-03-10 at 1.15.44 PM.png>)
+
+### Dataset Description
+
+![Alt text](<Important_images/Screenshot 2024-03-10 at 1.16.39 PM.png>)
+
+
+
+Few features contain the missing values, and everything can be dealt with in data
+preprocessing phase and is explained in the below phase. Neat data preparation is
+crucial for accurate Early prediction of Alzheimer's disease using machine learning
+models. In this case study, we have implemented key preprocessing techniques on the
+Open Access Series of Imaging Studies (OASIS) longitudinal dataset. These
+techniques include handling missing values, addressing categorical data, and scaling
+or normalizing features.
+There are few columns such as “SES” and “MMSE” consisting of null values, we
+employed imputation techniques such as median and mean imputation to eliminate
+null values from the data set. Categorical data was encoded using one-hot encoding or
+label encoding, depending on the cardinality of the variables. In this case the target
+variable that is “Group” column contains categorical data with three unique values
+“Demented”, “Non-Demented”, “Converted”. Converted values are replaced with
+Demented as it is the status of showing dementia in a person. Now there are two
+unique values present in the target variable and one-hot encoding is implemented on
+this column. Finally, demented is converted into ‘1’ and non-Demented is converted
+to ‘0’. These Data Preprocessing techniques ensured a complete and suitable dataset
+for training machine learning models, enhancing the accuracy and reliability of
+Alzheimer's disease predictions in early stages.
+The following Table 3 shows the minimum, maximum, mean and median values of
+each column of the data set to see how the data is distributed and getting to know
+important data columns in the given data set.
+
+### Minimum, Maximum, Median and Mean Values of each column.
+
+![Alt text](<Important_images/Screenshot 2024-03-10 at 1.18.44 PM.png>)
+
+Further, we implemented all the machine learning classification models and evaluated
+their performance using validation accuracies and test accuracies. We applied feature
+scaling to the model that achieves the highest accuracy. To ensure robustness of our
+evaluation, we will employ the 5-fold cross-validation technique and obtain validation
+accuracies.
 
 ## Methodology
 
@@ -23,7 +84,7 @@ determined. The activation function to determine probabilities used is a sigmoid
 function. To be specific this function has the range of values between 0 and 1 so the
 probabilities. And the output from sigmoid function is nothing but the required
 probability values. So, if the aim is to predict the probabilities of the output in that
-case Logistic regression model can be used undoubtedly
+case Logistic regression model can be used undoubtedly.
 
 ### Decision Tree
 A decision tree is a type of classification technique that has a flowchart-like visual
@@ -32,7 +93,7 @@ features. The results of these tests decide the direction to travel, leading us 
 suitable leaf node that corresponds to a specific class label. The mix of features that
 go into the classification process is represented by the branches that join the nodes. As
 a result, by exploring the routes from the root to the leaf nodes, we reveal the
-fundamental principles behind efficient categorization
+fundamental principles behind efficient categorization.
 
 ### Support Vector Machine
 SVM is a machine learning model which is used for both regression and classification
@@ -42,7 +103,7 @@ elevated higher dimensions. It looks for a linear optimal separating hyperplane
 through those new dimensions. With the help of nonlinear mapping, the data from
 both the classes can be separated by using a hyperplane. The hyperplane can be found
 using the support vectors and margins. By maximizing the margin and minimizing the
-classification errors, SVM implements the classification task
+classification errors, SVM implements the classification task.
 
 ### Random Forest
 Random Forest is one of the easy-to-use algorithms in machine learning which
@@ -70,7 +131,7 @@ accounts for the confidence levels of each algorithm and enhances accuracy and
 robustness by leveraging the collective knowledge of multiple algorithms. In simple
 words it is the combination of multiple classifiers to make collective predictions. By
 aggregating the predicted probabilities from each classifier, the Soft Voting Classifier
-achieves accurate and robust predictions
+achieves accurate and robust predictions.
 
 ### Hard Voting Classifier
 Hard voting is a widely employed technique. It falls under the family of ensemble
@@ -86,7 +147,7 @@ extensive application across various fields, particularly in machine learning
 classification tasks, where the combination of predictions from multiple models
 enhances accuracy and robustness. Leveraging the collective wisdom of the ensemble,
 hard voting offers a straightforward and effective approach to making class
-predictions
+predictions.
 
 ### Gradient Boosting Classifier
 Gradient Boosting is a powerful classification algorithm that iteratively improves
